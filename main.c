@@ -21,22 +21,39 @@ int main()
         {
             printf("输入要添加的敏感字符:\n");
             char m;
-            scanf("%d", &m);
-            scanf("%d", &m);
+            scanf("%c", &m);
+            scanf("%c", &m);
 
             arr[index] = m;
             index++;
 
             printf("添加成功,回车继续\n");
             char x;
-            scanf("%d", &x);
-            scanf("%d", &x);
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 2)
         {
+            printf("删除最后一个敏感字符\n");
+            index--;
+
+            printf("删除成功，回车继续");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 3)
         {
+            printf("敏感字符如下:\n");
+            
+            for(int i = 0; i < index; i++)
+            {
+                printf("第%d个敏感字符%c\n",i +1 ,arr[i]);
+            }
+            printf("回车继续");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 4)
         {
